@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "student-firebase-a42d0": {
+      "hosting": {
+        "student-firebase": [
+          "student-firebase-a42d0"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "student-firebase-a42d0"
+  }
+}

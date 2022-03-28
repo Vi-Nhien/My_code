@@ -1,0 +1,50 @@
+.search-area {
+  display: flex;
+  align-items: center;
+  font-size: 28px
+}
+
+.search-area .input-search {
+  outline: none;
+  border: none;
+  font-size: 18px;
+  margin-left: 12px;
+}
+
+
+.list-area {
+  display: flex;
+  column-gap: 24px;
+  border-bottom: 1px solid black;
+  padding: 20px 0;
+}
+
+.list-area img {
+  flex: 12%;
+  width: 32px;
+}
+
+.list-area .content {
+  flex: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.list-area .content .name {
+  font-size: 28px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  padding-bottom: 20px;
+}
+
+
+.list-area .content .category {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  padding-bottom: 16px;
+}
+
+.list-area .content .description{
+  font-size: 16px;
+}

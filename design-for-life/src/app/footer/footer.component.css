@@ -1,0 +1,115 @@
+.container-body
+{
+  margin: 0;
+  padding: 40px 0;
+  background-color: black;
+
+}
+.title{
+  text-align: center;
+  padding: 20px 0;
+}
+.title .main-title{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.45em;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.container-footer{
+  width: 72%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 0px;
+  flex-direction: row;
+}
+
+
+
+.container-footer .social-media,
+.container-footer .contact-us,
+.container-footer .copy-right{
+  flex: auto;
+}
+
+.container-footer .contact-us{
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding: 0 80px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .container-footer{
+    flex-direction: column;
+  }
+
+  .container-footer .contact-us{
+    border: none;
+    padding: 0;
+  }
+  .container-footer .social-media,
+  .container-footer .contact-us,
+  .container-footer .copy-right{
+      margin: 20px 0;
+  }
+}
+.container-footer .social-media{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.container-footer .contact-us{
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.container-footer .contact-us label{
+  padding: 12px 0;
+}
+
+.container-footer .contact-us input{
+  border: 1px solid white ;
+  background: black;
+  padding: 8px;
+  color: white;
+  margin: 8px 0;
+}
+
+.container-footer .contact-us .btn-sub{
+  appearance: none;
+  margin: 8px 0;
+  padding: 4px;
+  border: 1px solid white ;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+}
+
+.container-footer .contact-us .btn-sub:hover{
+  background-color:rgb(133, 133, 133);
+  color: black;
+}
+
+
+.container-footer .social-media i{
+  color: white;
+  font-size: 28px;
+  padding: 0 16px;
+
+}
+
+.copy-right{
+  text-align: center;
+}
+
+.copy-right p{
+  color: white;
+}

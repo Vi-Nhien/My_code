@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-firebase-6a1d3": {
+      "hosting": {
+        "angular-firebase": [
+          "angular-firebase-6a1d3"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-firebase-6a1d3"
+  }
+}

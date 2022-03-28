@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "design-for-life": {
+      "hosting": {
+        "design-for-life": [
+          "design-for-life"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "design-for-life"
+  }
+}
