@@ -29,7 +29,8 @@ export class EditStudentComponent implements OnInit {
       .GetStudent(id)
       .valueChanges()
       .subscribe((data) => {
-        this.editForm.setValue(data);
+        console.log(data)
+        this.editForm.patchValue(data);
       });
   }
   get firstName() {

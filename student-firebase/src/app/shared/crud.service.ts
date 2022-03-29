@@ -20,7 +20,7 @@ export class CrudService {
   }
 
   GetStudent(id: string) {
-    this.studentRef = this.db.object('student-list/' + id);
+    this.studentRef = this.db.object('student-list/'+id);
     return this.studentRef;
   }
 
