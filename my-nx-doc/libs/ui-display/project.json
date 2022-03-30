@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/ui-display",
+  "sourceRoot": "libs/ui-display/src",
+  "prefix": "my-nx-doc",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/ui-display"],
+      "options": {
+        "jestConfig": "libs/ui-display/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/ui-display/src/**/*.ts",
+          "libs/ui-display/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

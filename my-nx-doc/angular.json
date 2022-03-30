@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "projects": {
+    "display": "apps/display",
+    "display-e2e": "apps/display-e2e",
+    "ui-display": "libs/ui-display"
+  }
+}
