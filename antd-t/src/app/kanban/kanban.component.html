@@ -1,0 +1,18 @@
+<div class="container-kanban">
+  <div class="kanban-content">
+
+    <div class="to-do-column " *ngFor="let item of listSchema">
+      <div class="to-do-title">
+        {{item.name}}
+      </div>
+      <div class="to-do-content">
+        <div class="to-do-list">
+          <div class="to-do-row" *ngFor="let item of listSchema" cdkDrag>{{item.cards}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="btn-add-list">
+      <app-modal-form-add></app-modal-form-add>
+    </div>
+  </div>
+</div>

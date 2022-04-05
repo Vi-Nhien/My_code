@@ -1,0 +1,16 @@
+<button class="modal-btn" (click)="showModal()">
+  <span> <span><i nz-icon nzType="switcher" nzTheme="outline"></i></span></span>
+</button>
+<nz-modal [(nzVisible)]="isVisible" [nzTitle]="modalTitle" (nzOnCancel)="handleCancel()" [nzFooter]="modalFooter">
+    <ng-template #modalTitle>
+      lựa chọn
+    </ng-template>
+
+  <p *nzModalContent class="modal-content">
+    <button class="btn btn-edit"> <span><i nz-icon nzType="tool" nzTheme="outline"></i></span> chỉnh sửa </button>
+    <button class="btn btn-delete" (click)="deleteMessage()"> <span><i nz-icon nzType="delete" nzTheme="outline"></i></span> xóa </button>
+  </p>
+  <ng-template #modalFooter>
+    <button nz-button nzType="default" (click)="handleCancel()"> Cancel</button>
+  </ng-template>
+</nz-modal>

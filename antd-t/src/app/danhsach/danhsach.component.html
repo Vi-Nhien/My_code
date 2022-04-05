@@ -1,0 +1,30 @@
+<div class="container-table">
+  <nz-table #nzTable [nzData]="users" nzTableLayout="fixed" class = "main-table">
+    <thead>
+      <tr>
+        <th nzWidth="60px"></th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Country</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let user of nzTable.data">
+        <tr>
+          <td [nzExpand]="expandSet.has(user.id)" (nzExpandChange)="onExpandChange(user.id, $event)"></td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.email}}</td>
+          <td>{{ user.country }}</td>
+          <td>
+            <app-modal-option></app-modal-option>
+          </td>
+        </tr>
+        <tr [nzExpand]="expandSet.has(user.id)">
+          <span>{{ user.description }}</span>
+        </tr>
+
+      </ng-container>
+    </tbody>
+  </nz-table>
+</div>

@@ -1,0 +1,27 @@
+<button nz-button nzType="primary" (click)="showModal()">
+  <span><span><i nz-icon nzType="plus" nzTheme="outline"></i></span></span>
+</button>
+
+<form [formGroup]="form!"  (ngSubmit)="onSubmit()" >
+
+  <nz-modal
+  [(nzVisible)]="isVisible"
+  nzTitle="Create new list"
+  (nzOnCancel)="handleCancel()"
+  [nzFooter]="modalFooter"
+  [nzOkLoading]="isOkLoading"
+  [nzFooter]="modalFooter"
+>
+  <p *nzModalContent class = "form-input">
+    <label for=""></label>
+   <input type="text" placeholder="Name..." class = "input-name-list" class="form-control" formControlName = "name">
+  </p>
+  <ng-template #modalFooter>
+    <button nz-button nzType="default" (click)="handleCancel()"> Cancel</button>
+    <button nz-button type = "submit" nzType="primary" (click)="handleOk()"> Save</button>
+  </ng-template>
+</nz-modal>
+
+</form>
+
+

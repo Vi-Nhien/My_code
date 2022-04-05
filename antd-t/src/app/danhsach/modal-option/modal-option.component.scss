@@ -1,0 +1,43 @@
+.modal-btn{
+  border: none;
+  background: none;
+  font-size: 18px;
+}
+
+
+
+.modal-content{
+  display: flex;
+  flex-direction: column;
+  border: none;
+  .btn{
+      padding: 12px 0;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 8px;
+      margin-bottom: 8px;
+
+      background-color: inherit;
+
+      border : 1px solid;
+      border-radius: 6px;
+
+      font-size: 16px;
+
+      cursor: pointer;
+  }
+
+
+  .btn-edit{
+    border-color: #1ee646 ;
+    color: #1ee646;
+  }
+
+  .btn-delete{
+    border-color: #ff2b2b;
+    color: #ff2b2b;
+  }
+
+}
+
